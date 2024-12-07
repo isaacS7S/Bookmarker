@@ -1,0 +1,53 @@
+body {
+    background-color: #F7ECDE;
+}
+
+a {
+    text-decoration: none;
+    color: #F7ECDE !important;
+}
+
+p {
+    font-family: "Righteous", sans-serif;
+
+}
+
+.sub {
+    width: 15% !important;
+}
+
+h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 50px !important;
+    position: relative;
+    width: 25%;
+    z-index: 1;
+
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    width: 270px;
+    height: 20px;
+    bottom: 0;
+    background-color: #FEC260;
+    z-index: -1;
+    transition: all 0.5s;
+
+}
+
+
+h1:hover::before {
+    content: "";
+    position: absolute;
+    width: 270px;
+    height: 40px;
+    bottom: 0;
+    background-color: #FEC260;
+}
+
+.container .inner {
+    border-top: 2px dotted black;
+    border-bottom: 2px dotted black;
+}

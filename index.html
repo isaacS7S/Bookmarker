@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="icon" type="image/png" href="download.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container text-start py-5 overflow-auto">
+        <h1 class="mx-auto">Bookmarker</h1>
+
+        <div class="inputs py-3 d-flex flex-column justify-content-center my-5 inner">
+            <p class="text-center text-success fs-3"><i class="fa-solid fa-bookmark"></i> Bookmark your
+                favorite sites
+                <i class="fa-solid fa-bookmark"></i>
+            </p>
+            <label for="WebName" class="py-2 form-label"> <i class="fa-solid fa-book"></i> Site Name</label>
+            <input type="text" class="w-100 form-control border-warning text-start" placeholder="Bookmark Name" id="WN">
+            <div id="alertName" class="alert alert-danger d-none">Name must start with a capital letter, followed by
+                3 to 9 lowercase letters, and may end with a number.</div>
+            <label for="WebUrl" class="py-2"> <i class="fa-solid fa-link"></i> Website URL</label>
+            <input type="text" class="w-100 form-control border-warning text-start" placeholder="Bookmark URL" id="WU">
+            <div id="alertUrl" class="alert alert-danger d-none">Please enter a valid email address.</div>
+            <div class="btn btn-danger my-3 mx-auto sub" onclick="GetValue()">submit</div>
+        </div>
+        <table class="w-100">
+            <thead>
+                <tr class="d-flex justify-content-around py-2 bg-secondary-subtle">
+                    <td class="fw-bold w-25 text-center">index</td>
+                    <td class="fw-bold w-25 text-center">Website Name</td>
+                    <td class="fw-bold w-25 text-center">Visit</td>
+                    <td class="fw-bold w-25 text-center">Delete</td>
+                </tr>
+            </thead>
+            <tbody id="demo"></tbody>
+
+        </table>
+    </div>
+
+
+
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>
